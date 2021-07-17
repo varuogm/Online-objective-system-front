@@ -28,7 +28,7 @@ export class Adm_Registration extends Component {
             "NameOrg" : this.state.nameOrg
         }
         
-        await axios.post(`http://localhost:5000/adminModel`,data2).then(res => {
+        await axios.post(`https://dashboard.heroku.com/apps/online-objective-system/adminModel`,data2).then(res => {
          alert(JSON.stringify(res.data.message) )   
         // console.log();
             console.log(res.data);
