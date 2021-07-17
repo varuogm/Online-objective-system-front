@@ -40,7 +40,7 @@ function QuestionEdit() {
 
     useEffect( async()=>{
         let Questions1 = {Questions:Questions}
-         await axios.put('https://dashboard.heroku.com/apps/online-objective-system/postSubjects/'+currSubId,Questions1)
+         await axios.put('https://online-objective-system.herokuapp.com/postSubjects/'+currSubId,Questions1)
       //this link uncomment plz  await axios.post('http://localhost:5000/addQuestions',formdata)
         alert("question added")
      },[Questions]);
@@ -61,7 +61,7 @@ function QuestionEdit() {
     },[]);
 
     const loadSubjects= async()=>{
-        const result=await axios.get('https://dashboard.heroku.com/apps/online-objective-system/postSubjects');
+        const result=await axios.get('https://online-objective-system.herokuapp.com/postSubjects');
         setSubjects(result.data);
     }
 /////

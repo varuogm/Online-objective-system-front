@@ -21,10 +21,10 @@ function ExamPage(props) {
     
      const loadQuestions = async()=>{
         //   alert('first')
-        let result1 = await axios.get('https://dashboard.heroku.com/apps/online-objective-system/id')
+        let result1 = await axios.get('https://online-objective-system.herokuapp.com/id')
         let id = result1.data[0].id;
        // alert(JSON.stringify(result1.data[0].id) )
-        const result=await axios.get('https://dashboard.heroku.com/apps/online-objective-system/postSubjects/'+id);
+        const result=await axios.get('https://online-objective-system.herokuapp.com/postSubjects/'+id);
         setquestionsArr(result.data);
         let i=0;
         let cars = []

@@ -29,7 +29,7 @@ export class Stud_Registration extends Component {
         }
         // alert("hi")
 
-        axios.post(`https://dashboard.heroku.com/apps/online-objective-system/studentModel`,data2).then(res => {
+        axios.post(`https://online-objective-system.herokuapp.com/studentModel`,data2).then(res => {
            
             // alert(JSON.stringify(res.data.message ))
             // console.log(res.data);

@@ -22,7 +22,7 @@ export class Adm_login extends Component {
         }
         // alert('hi');
         // alert(JSON.stringify(data2))
-         axios.post(`https://dashboard.heroku.com/apps/online-objective-system/adminModel/login`,data2).then(res => {
+         axios.post(`https://online-objective-system.herokuapp.com/adminModel/login`,data2).then(res => {
         //  alert(JSON.stringify(res.data) )   
         // console.log();
             console.log(res.data);
