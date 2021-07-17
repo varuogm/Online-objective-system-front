@@ -17,12 +17,12 @@ function AddSubjects() {
     },[]);
 
     const loadSubjects= async()=>{
-        const result=await axios.get('http://localhost:5000/postSubjects');
+        const result=await axios.get('https://dashboard.heroku.com/apps/online-objective-system/postSubjects');
         setSubjects(result.data);
     }
    const AddSubjectHandler=async e=>{
         e.preventDefault()
-        await axios.post('http://localhost:5000/postSubjects',formdata);
+        await axios.post('https://dashboard.heroku.com/apps/online-objective-system/postSubjects',formdata);
          setSubjects(arr => [...arr,formdata])
    }
    
