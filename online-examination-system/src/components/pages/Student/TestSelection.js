@@ -7,7 +7,7 @@ function TestSelection() {
     const [currSubId,setSubId] = useState("")
     const takeSubId = async(_id)=>{
       //  console.log("subid hi"+_id)
-        axios.put("http://localhost:5000/id/",{"id":_id})
+        axios.put("https://dashboard.heroku.com/apps/online-objective-system/id/",{"id":_id})
         setSubId(""+_id)
         // alert(_id)
     }
@@ -19,7 +19,7 @@ function TestSelection() {
     
     const loadSubjects= async()=>{
 
-        const result=await axios.get('http://localhost:5000/postSubjects');
+        const result=await axios.get('https://dashboard.heroku.com/apps/online-objective-system/postSubjects');
         setSubjects(result.data);
         
     }
