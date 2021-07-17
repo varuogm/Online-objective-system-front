@@ -150,9 +150,9 @@ export class Stud_Registration extends Component {
                                                     <div class="col-md-8">
                                                     <select value={this.state.nameOrg} name='nameOrg'  onChange={this.myChangeHandler} required>
                                                             <option  selected>Select amongst the firms registered with us</option>
-                                                            <option value='LTI'>LTI</option>
-                                                            <option value='PICT'>PICT</option>
-                                                            <option value='MIT'>MIT</option>
+                                                            <option value='PCE'>PCE</option>
+                                                            <option value='PIET'>PIET</option>
+                                                            <option value='PGI'>PGI</option>
                                                         </select>
 
                                                     </div>
