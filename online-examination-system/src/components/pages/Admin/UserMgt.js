@@ -23,7 +23,7 @@ function UserMgt() {
     }, []);
 
      const loadusers = async () => {
-        const result = await axios.get('http://localhost:5000/studentModel');
+        const result = await axios.get('https://dashboard.heroku.com/apps/online-objective-system/studentModel');
         setUser(result.data);
     };
 
@@ -42,7 +42,7 @@ function UserMgt() {
     const updateusers = async (e) => {
         e.preventDefault()
         alert(user._id+ "calling from update")
-        const result = await axios.put(`http://localhost:5000/studentModel/${user._id}`,{
+        const result = await axios.put(`https://dashboard.heroku.com/apps/online-objective-system/studentModel/${user._id}`,{
              "Name": Nametext,
              "Email": Emailtext,
              "Password": '',
@@ -58,7 +58,7 @@ function UserMgt() {
 
 const deleteUser= async id=>{
     alert('deleting :'+id);
-    const result = await axios.delete(`http://localhost:5000/studentModel/${id}`);
+    const result = await axios.delete(`https://dashboard.heroku.com/apps/online-objective-system/studentModel/${id}`);
     loadusers();
 }
 
