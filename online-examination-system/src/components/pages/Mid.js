@@ -6,7 +6,22 @@ import { Link} from "react-router-dom";
 
 const Mid = () => {
   return (
-
+    <>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="w-100 shadow" src="https://nintendo-power.com/wp-content/uploads/2021/06/1623480800_Download-2021-State-Examination-and-Control-Activities-Candidates-Sub-Witness-or.jpg" />
+    </div>
+    <div class="col-lg-6">
+      <div class="p-5 mt-4">
+          <h1 class="display-4">Give your first Exam now</h1>
+          <p class="lead">To make an online objective test system that allows users to take online tests and automatically generates results based on answers marked by users.  . </p>
+     
+        </div>
+    </div>
+</div>
+<hr/>
+  </div>
     <div className="container align-items-center">
       <div className="card-deck d-flex justify-content-center align-items-end">
         <div className="card">
@@ -31,7 +46,7 @@ const Mid = () => {
             </p>
           </div>
           <div className="card-footer">
-          <Link to='/login'className="btn btn-primary  btn-block">login</Link>
+          <Link exact to='/admin-log' className="btn btn-primary  btn-block">login</Link>
           </div>
         </div>
         <div className="card">
@@ -55,7 +70,7 @@ const Mid = () => {
 
     
     </div>  
-
+</>
   );
 };
 export default Mid;
