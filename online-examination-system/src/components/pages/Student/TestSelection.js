@@ -35,7 +35,7 @@ function TestSelection() {
                   
                     <div className="card h-100" >
                     
-                        <img src="../../images/test1.jpeg" className="card-img-top" alt="All The Best" />
+                        <img src="https://media.glassdoor.com/sql/2321380/celebal-technologies-squarelogo-1588749669479.png" className="card-img-top" alt="All The Best" />
                         <div className="card-body">
                             <h2 className="card-title">{sub.Name}</h2>
                             <p className="card-text">{sub.Description}</p>
