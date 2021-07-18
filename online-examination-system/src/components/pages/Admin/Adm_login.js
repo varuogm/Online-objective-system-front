@@ -120,6 +120,13 @@ export class Adm_login extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="d-flex justify-content-center">
+        <Link to="/">
+          <button className="btn-center btn-sm  btn-light ">
+            BAck to home ↩️
+          </button>
+        </Link>
+      </div>
             </div>
         )
     }
