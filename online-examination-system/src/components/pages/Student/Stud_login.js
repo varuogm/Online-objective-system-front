@@ -18,12 +18,9 @@ export class Stud_login extends Component {
           "Email" : this.state.email,  
           "Password" : this.state.password 
       }
-      // alert('hi');
-    //    alert(JSON.stringify(data2))
-      
+     
        axios.post(`https://online-objective-system.herokuapp.com/studentModel/login`,data2).then(res => {
-      //  alert(JSON.stringify(res.data) )   
-      // console.log();
+      
           console.log(res.data);
           if(res.data.message ==="Invalid Email or Password!")
           {
@@ -114,7 +111,13 @@ export class Stud_login extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><div className="d-flex justify-content-center">
+        <Link to="/">
+          <button className="btn-center btn-sm  btn-light ">
+            BAck to home ↩️
+          </button>
+        </Link>
+      </div>
             </div>
         )
     }
