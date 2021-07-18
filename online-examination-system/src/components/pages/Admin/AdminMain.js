@@ -7,7 +7,7 @@ function AdminMain() {
     return (
         <div >
            
-            <nav className="blueShade adm-nav-header ">
+          <nav className="greynav adm-nav-header ">
                 <ul className="nav adm-nav-links ">
                     <li  className="nav-item text-light adm-li">
                         <NavLink  to="/AdminMain/usermgt" className="nav-link active adm-a" > User management</NavLink>    
